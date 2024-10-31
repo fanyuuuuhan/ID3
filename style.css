@@ -1,0 +1,662 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif TC", serif;
+}
+
+
+html{
+    font-size: 16px;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+    height: 10rem;
+    background-color: #FFF8E1;
+}
+
+
+#navbar-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+#navbar-btn button{
+    background-color: #FFF8E1;
+    font-size:1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+    transition: color 0.5s ease;
+    height: 100%;
+    width: 6rem;
+}
+
+
+#navbar-btn button:hover{
+    background-color: #C2B0A7;
+    color: #FFF8E1;
+}
+
+
+.header-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+
+.header-img img{
+    margin-left: 2rem;
+    height: 3rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF8E1;
+    height:6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    border-bottom: 0.5px solid #5b5b5b;
+}
+
+
+button img{
+    height: 1.7rem;
+}
+
+
+.dropdown ul{
+    background-color: #FFF8E1;
+}
+
+
+/* bootstrap可能套弄樣式到a上，所以用 !important 之類的更強的效果覆蓋他 */
+
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #C2B0A7 !important;
+    color: #FFF8E1;
+    transition: background-color 0.5s ease;
+}
+
+
+.dropdown-menu:hover{
+    background-color: #C2B0A7;
+}
+
+
+#undernav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #FFF8E1 ;
+    position: relative;
+    margin-top: 6rem;
+}
+
+
+#navbar{
+    width: 5rem;
+    border: 1px solid #000;
+    display: flex;
+    flex-grow: 1;
+}
+
+
+#italic{
+    /* border: 1px solid #000; */
+    font-size: 1.5rem;
+    margin-left: 6rem;
+    font-weight: 500;
+}
+
+
+#italictext{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2rem;
+    width: 10rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.hometext:hover{
+    color: #C2B0A7;
+    transition: color 0.3s ease;
+}
+
+
+.img-container{
+    /* border: 1px solid #000; */
+    height: 14rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.img-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    transition: transform 0.2s ease;
+}
+
+
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #000;
+}
+
+
+#text-overlay2{
+    color: #FFF8E1;
+}
+
+
+#text-overlay2 button{
+    border: solid 1px #FFF8E1;
+    color: #FFF8E1;
+
+
+}
+
+
+.text-overlay p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.text-overlay button{
+    border: solid 1px #000;
+    background-color:  transparent;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.2s ease;
+}
+
+
+.clickbtn:hover{
+    background-color: #C2B0A7;
+    color: #FFF8E1;
+    border-color: #FFF8E1;
+}
+
+
+
+#carouselExample {
+    padding-top: 18vh;
+    margin-left:50px;
+    margin-right: 50px;
+}
+
+.carousel-inner{
+    display: flex;
+}
+
+.logoimg {
+    max-width: 100%;
+    display: flex;
+    margin-left: 7vh;
+}
+
+article.a-1 {
+    padding-top: 570px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #fff8e1;
+    padding-bottom: 10vh;
+}
+
+.cuisine {
+    margin-bottom: 10px;
+}
+
+.cuisine-img {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuisine-img1:hover {
+    background-image: url(./img/中式黑.PNG);
+}
+.cuisine-img2:hover {
+    background-image: url(./img/日式黑.PNG);
+}
+
+.cuisine-img3:hover {
+    background-image: url(./img/美式黑.PNG);
+}
+
+.cuisine-img4:hover {
+    background-image: url(./img/義式黑.PNG);
+}
+
+.cuisine-img5:hover {
+    background-image: url(./img/韓式黑.PNG)
+}
+
+.cuisine-img1 {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 15px;
+    background-image: url(./img/中式.PNG);
+    background-size: cover;
+    border: none;
+}
+
+.cuisine-img2 {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 15px;
+    background-image: url(./img/日式.PNG);
+    background-size: cover;
+    border: none;
+}
+
+.cuisine-img3 {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 15px;
+    background-image: url(./img/美式.PNG);
+    background-size: cover;
+    border: none;
+}
+
+.cuisine-img4 {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 15px;
+    background-image: url(./img/義式.PNG);
+    background-size: cover;
+    border: none;
+}
+
+.cuisine-img5 {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 15px;
+    background-image: url(./img/韓式.PNG);
+    background-size: cover;
+    border: none;
+}
+
+.cuisine-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Noto Serif TC", serif;
+}
+
+.cuisine-content-word {
+    margin-top: 10px;
+    padding: 0 7vh;
+    font-size: 20px;
+}
+
+
+.news {
+    font-family: "Noto Serif TC", serif;
+    margin-top: 5vh;
+    background-color: #fff;
+    padding: 3vh 5vh;
+    border-radius: 15px;
+}
+
+.title {
+    padding: 0%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.news-content-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+#btn-news-1 {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-image: url(./img/優惠im\ pasta_工作區域\ 1.png);
+    background-size: cover;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+}
+#btn-news-2 {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-image: url(./img/優惠小姐姐_工作區域\ 1.jpg);
+    background-size: cover;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+}
+#btn-news-3 {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-image: url(./img/優惠新丼_工作區域\ 1.jpg);
+    background-size: cover;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+}
+#btn-news-4 {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-image: url(./img/優惠胖胖_工作區域\ 1.jpg);
+    background-size: cover;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+}
+#btn-news-5 {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-image: url(./img/優惠郭董_工作區域\ 1.jpg);
+    background-size: cover;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+}
+
+
+article.a-2{
+    padding-bottom: 5vh;
+    background-color: #fff8e1;
+}
+
+.information{
+    font-family: "Noto Serif TC", serif;
+    background-color:#FFEEDD;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5vh;
+    display: flex;
+    padding: 2% 10%;
+}
+
+.dog{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0;
+}
+#dog-img{
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding-top: 15%;
+    background-color: #c2b0a7;
+    display: flex;
+    justify-content: center;
+}
+#in-dog{
+    padding: 5%;
+}
+
+.baozi{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#bao-img{
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding-bottom: 15%;
+    background-color: #c2b0a7;
+
+}
+#in-bao{
+    padding: 5%;
+}
+
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color:#E1C2AB;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.footer{
+    background-color:#E1C2AB;
+    height: 10rem;
+}
+
+
+.footer1{
+    font-size: 0.75rem;
+    font-weight: 700;
+    position: relative;
+    padding-top: 0.5rem;
+}
+
+
+.footer1 p{
+    margin: 1rem 2rem;
+}
+
+
+.footerimg{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+
+.footer1 img{
+    height: 4rem;
+    margin-left: 2rem ;
+}
+
+
+.footer2{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+
+.footer2 a{
+    color: #000;
+    margin: 0.8rem 1rem;
+    padding-right: 1rem;
+    width: 5rem;
+}
+
+
+.footer2 a:hover{
+    color: #FFF8E1;
+    transition: color 0.5s ease;
+}
+
+
+.footer2 ul{
+    background-color: #E1C2AB !important;
+}
+
+
+.footer3{
+    flex-grow: 1;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.footer3 p{
+    margin: 0.9rem 2rem;
+}
+
+
+.footer4{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+
+.footer4 img{
+    height: 2rem;
+    margin: 1rem 0.5rem;
+}
+
+
+
+
+article.account{
+    font-family: "Noto Serif TC", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15vw 10vw 15vw ;
+    background-color: #fff8e1;
+}
+
+.account-input1{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 3fr;
+    width: 50%;
+    background-color: #FFf;
+    border-radius: 15px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 5px solid #5d5d5d;
+    border-right: 5px solid #5d5d5d;
+}
+
+.account-name{
+    background-color: #ebd7c6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.account-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-mb3{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.mb-3{
+    background-color: #fff;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.account-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-signin{
+    width: 80%;
+    height: 40px;
+    background-color: #ebd7c6;
+    border: none;
+    border-bottom: 2px solid #5d5d5d;
+    border-right: 2px solid #5d5d5d;
+    border-radius: 5px;
+}
+
+.form-check{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.account-signup{
+    display: flex;
+    width: 80%;
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+
+.form-check-label{
+    margin-left: 5px;
+}
+
+.account-input2{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 3fr;
+    width: 50%;
+    background-color: #FFf;
+    border-radius: 15px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 5px solid #5d5d5d;
+    border-right: 5px solid #5d5d5d;
+}
